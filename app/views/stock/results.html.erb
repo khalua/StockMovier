@@ -1,0 +1,14 @@
+<div id="results">
+  <div id="ticker">
+    <%= @ticker || "" %>
+  </div>
+
+  <div id="price">
+    $<%= @price.round(2) || "0" %>
+  </div>
+
+  <div id="name">
+    <%= @name || "" %>
+  </div>
+
+</div>
