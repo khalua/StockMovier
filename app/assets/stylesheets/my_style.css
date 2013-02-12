@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Diplomata+SC); /*stock font*/
 @import url(http://fonts.googleapis.com/css?family=Mrs+Sheppards); /*movies font*/
+@import url(http://fonts.googleapis.com/css?family=Junge); /*hero*/
 
 body {
 }
@@ -9,9 +10,16 @@ header   {
   margin-right: 60px;
 }
 
+header a {
+  text-decoration: none;
+}
+
 nav {
+  font-family: 'Junge', serif;
+  font-size: 50px;
   padding-bottom: 15px;
   border-bottom: 1px solid black;
+  text-align: center;
 }
 
 
@@ -29,6 +37,20 @@ h1.stock {
   color: black;
 }
 
+
+#hero h4 {
+  font-family: 'Junge', serif;
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+#hero p {
+  font-family: 'Junge', serif;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+
 #container {
   width: 960px;
   height: 700px;
@@ -37,8 +59,9 @@ h1.stock {
 }
 
 #form_box {
-  margin: 10px 20px 20px 10px;
-  display: inline;
+  margin: 30px 20px 20px 10px;
+  width: 300px;
+  height: 100px;
 }
 
 
@@ -48,27 +71,30 @@ input {
 }
 
 button {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   display: block;
   margin-top: 20px;
+  border-radius: 4px;
 }
 
 #result_box {
+  margin-left: 10px;
   float: left;
   height: 200px;
   width: 350px;
 }
 
 ul {
+  font-family: 'Junge', serif;
   line-height: 25px;
 }
 
 #poster_box {
-  float:left;
+  float:right;
   margin-left: 100px;
   position: fixed;
-  top: 155px;
+  top: 188px;
   left: 520px;
 }
 
@@ -87,3 +113,8 @@ ul {
 .name {
   font-size: 40px;
 }
+
+.em {
+  color: red;
+}
+
