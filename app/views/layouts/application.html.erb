@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Stock + Movie</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <title>Pontificus Secessus</title>
+      <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
 </head>
 <body>
-<nav>
-  <a href="/stock">Stock</a>
-  <a href="/movie">Movie</a>
-</nav>
+  <header>
+    <a href="/"><h1>Pontificus Secessus</h1></a><h4>Pope retirement app</h4>
+    <nav>
+      <a href="/stock">STOCK</a>
+      <a href="/movie">MOVIE</a>
+    </nav>
+
+  </header>
+  <div id="container">
+
 <%= yield %>
 
+</div>
 </body>
 </html>

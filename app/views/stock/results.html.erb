@@ -1,14 +1,19 @@
-<div id="results">
-  <div id="ticker">
-    <%= @ticker || "" %>
-  </div>
+  <form method='get' action='/stock/query'>
+    <input type='text' name='ticker' method="post" autofocus>
+    <button>Go</button>
+  </form>
 
-  <div id="price">
-    $<%= @price.round(2) || "0" %>
-  </div>
+  <div id="result_box">
 
-  <div id="name">
-    <%= @name || "" %>
-  </div>
+    <div class="ticker">
+      <%= @ticker || "" %>
+    </div>
 
-</div>
+    <div class="price">
+      <%= number_to_currency(@price) || "0" %>
+    </div>
+
+    <div class="name">
+      <%= @name || "" %>
+    </div>
+  </div>

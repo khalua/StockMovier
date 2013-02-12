@@ -3,6 +3,7 @@ class StockController < ApplicationController
   end
 
   def query
+
     @ticker = params[:ticker]
       begin
         @quote = YahooFinance::get_quotes(YahooFinance::StandardQuote, @ticker)[@ticker]

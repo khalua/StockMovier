@@ -1,5 +1,9 @@
-<% if @b.present? %>
+  <form action="/movie/query" method="get">
+    <input type="text" name="search" autofocus>
+    <button>Go</button>
+  </form>
 
+  <div id="movie_result_box">
     <ul>
     <li>Title: <%= @title %></li>
     <p>
@@ -13,10 +17,8 @@
     <p>
     <li>Plot: <%= @plot %></li>
   </ul>
-  </div>
 </div>
 
-
-<img src="<%= @poster %>"
-
-<% end %>
+ <div id="poster_box">
+<img src="<%= @poster %>">
+</div>
