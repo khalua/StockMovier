@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pontificus Secessus</title>
+  <title>Movie/Stockr</title>
       <%= stylesheet_link_tag    "application", :media => "all" %>
       <%= javascript_include_tag "application" %>
       <%= csrf_meta_tags %>
 </head>
 <body>
   <header>
-    <a href="/"><h1>Pontificus Secessus</h1></a><h4>Pope retirement app</h4>
+    <h1 class="movie">Movie  /  </h1><h1 class="stock">Stockr</h1>
     <nav>
-      <a href="/stock">STOCK</a>
       <a href="/movie">MOVIE</a>
+      <a href="/stock">STOCK</a>
     </nav>
-
   </header>
+
   <div id="container">
 
 <%= yield %>

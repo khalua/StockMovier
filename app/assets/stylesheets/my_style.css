@@ -1,50 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Diplomata+SC); /*stock font*/
+@import url(http://fonts.googleapis.com/css?family=Mrs+Sheppards); /*movies font*/
+
 body {
-  background-color: black
-   background-position: center;
-  background-attachment: fixed;
-  background-image:url('/assets/pope_big.jpg');
-  -webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+}
+
+header   {
+  margin-left: 30px;
+}
+
+nav {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+
+h1.movie {
+  font-family: 'Mrs Sheppards', cursive;
+  font-size: 120px;
+  color: black;
+  display: inline-block;
+}
+
+h1.stock {
+  display: inline;
+  font-family: 'Diplomata SC', cursive;
+  font-size: 90px;
+  color: black;
 }
 
 #container {
-  width: 840px;
+  width: 960px;
   height: 700px;
   margin: 0 auto 0 auto;
 }
 
-nav {
-  margin-bottom: 50px;
-}
-
-h1 {
-  font-size: 60px;
-   color: #ab0000;
-}
-
-header h1 {
-  display: inline-block;
-  font-size: 60px;
-  color: #ab0000;
-}
-
-header h4 {
-  display: inline-block;
-  margin-left: 30px;
-  font-size: 20px;
-  color: #964b00;
-}
-
-form {
-  float: left;
-  margin: 20px 0 0 30px;
+#form_box {
+  margin: 10px 20px 20px 10px;
+  display: inline;
 }
 
 
 input {
   line-height: 30px;
+  width: 300px;
 }
 
 button {
@@ -55,33 +55,25 @@ button {
 }
 
 #result_box {
-/*  position: relative;
+  float: left;
   height: 200px;
   width: 350px;
-  top: 370px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  padding:10px;*/
-  float: right;
-  position: relative;
-  height: 200px;
-  width: 350px;
-  top: 370px;
-  margin-right: -100px;
-
 }
 
-#movie_result_box {
-  clear: inherit;
-  color: white;
-  display: block;
-  width: 300px;
+ul {
+  line-height: 25px;
+}
+
+#poster_box {
+  float:left;
+  margin-left: 100px;
+  position: fixed;
+  top: 155px;
+  left: 520px;
 }
 
 .ticker, .price, .name {
   color: red;
-  text-shadow: black 0.2em 0.3em 0.2em
 }
 
 .ticker {
@@ -94,8 +86,4 @@ button {
 
 .name {
   font-size: 40px;
-}
-
-#poster_box {
-  float: right;
 }

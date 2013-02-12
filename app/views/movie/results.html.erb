@@ -1,24 +1,21 @@
+<div id="form_box">
   <form action="/movie/query" method="get">
     <input type="text" name="search" autofocus>
     <button>Go</button>
   </form>
+</div>
 
-  <div id="movie_result_box">
-    <ul>
+<div id="result_box">
+  <ul>
     <li>Title: <%= @title %></li>
-    <p>
     <li>Year: <%= @year %></li>
-    <p>
     <li>Title: <%= @title %></li>
-    <p>
     <li>Rated: <%= @rated %></li>
-    <p>
     <li>Director: <%= @director %></li>
-    <p>
     <li>Plot: <%= @plot %></li>
   </ul>
 </div>
 
- <div id="poster_box">
-<img src="<%= @poster %>">
+<div id="poster_box">
+  <img src="<%= @poster %>">
 </div>

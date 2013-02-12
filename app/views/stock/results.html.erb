@@ -1,9 +1,11 @@
-  <form method='get' action='/stock/query'>
-    <input type='text' name='ticker' method="post" autofocus>
-    <button>Go</button>
-  </form>
+<div id="form_box">
+<form method='get' action='/stock/query'>
+  <input type='text' name='ticker' method="post" autofocus>
+  <button>Go</button>
+</form>
+</div>
 
-  <div id="result_box">
+  <div id="poster_box">
 
     <div class="ticker">
       <%= @ticker || "" %>
